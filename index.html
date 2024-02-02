@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jewelry Store</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/d8f052c6cf.js"
       crossorigin="anonymous"
@@ -27,7 +28,7 @@
     <!-- Container for entire jewelry store -->
     <div class="jewelry-container">
       <div>
-        <h1>Gehna-where luxury meets affordabilty</h1>
+        <h1>Gehna-where luxury meets affordability</h1>
         <p>Our Jewelry Collection</p>
 
         <!-- Product Showcase -->
@@ -60,8 +61,8 @@
           </div>
           <!-- Product 4-->
           <div class="product">
-            <img src="earring4.jpg" alt="Jewelry 3" />
-            <h3>Earring3</h3>
+            <img src="earring4.jpg" alt="Jewelry 4" />
+            <h3>Earring4</h3>
             <p>some Info</p>
             <span class="price">$799</span>
             <button onclick="addToCart(799)">Add to Cart</button>
@@ -82,24 +83,25 @@
           <label for="email">Email:</label>
           <input type="email" name="email" required />
 
-           <!-- Display Cart Total and Number of Items -->
-    <div class="cart-container">
-      <h4>
-        Cart
-        <span class="price" style="color: black">
-          <i class="fa fa-shopping-cart"></i>
-          <b id="cart-item-count">0</b>
-        </span>
-      </h4>
-      <p>
-        Total
-        <span class="price" style="color: black">
-          <b id="cart-total">$0</b>
-        </span>
-      </p>
-    <!-- Add this button where it makes sense in your layout -->
-    <button id="clear-cart-button">Clear Cart</button>
-  </div>
+          <!-- Display Cart Total and Number of Items -->
+          <div class="cart-container">
+            <h4>
+              Cart
+              <span class="price" style="color: black">
+                <i class="fa fa-shopping-cart"></i>
+                <b id="cart-item-count">0</b>
+              </span>
+            </h4>
+            <p>
+              Total
+              <span class="price" style="color: black">
+                <b id="cart-total">$0</b>
+              </span>
+              <!-- Move the "Clear Cart" button here -->
+              <button id="clear-cart-button">Clear Cart</button>
+            </p>
+          </div>
+
           <label for="payment">Payment Type:</label>
           <select name="payment" id="payment" required>
             <option value="" disabled selected>Select Payment Type</option>
@@ -108,40 +110,14 @@
             <option value="paypal">PayPal</option>
             <!-- Add more options as needed -->
           </select>
-           <!-- Display Cart Total and Number of Items -->
-  
-   
-  </div>
-</div>
         </form>
-
-        <!-- Display Cart Total and Number of Items -->
-        <div class="cart-container">
-          <h4>
-            Cart
-            <span class="price" style="color: black">
-              <i class="fa fa-shopping-cart"></i>
-              <b id="cart-item-count">0</b>
-            </span>
-          </h4>
-          <p>
-            Total
-            <span class="price" style="color: black">
-              <b id="cart-total">$0</b>
-            </span>
-          </p>
-          <!-- Add this button where it makes sense in your layout -->
-<button id="clear-cart-button">Clear Cart</button>
-
-        </div>
-        
-        </div>
       </div>
     </div>
 
-    <!-- Error Display Container -->
-    <div id="errorDisplay"></div>
+    <!-- Error Display Container for Form -->
+    <div id="formErrorDisplay"></div>
 
-    <script src="script.js"></script>
+    <!-- Error Display Container for Cart -->
+    <div id="cartErrorDisplay"></div>
   </body>
 </html>

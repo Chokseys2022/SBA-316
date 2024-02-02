@@ -116,7 +116,8 @@ button:hover {
 
 /* Add this CSS to style the cart and button */
 .cart-container {
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px;
+  text-align: center;
 }
 
 #clear-cart-button {
@@ -126,7 +127,9 @@ button:hover {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px;
+  /* Adjust as needed */
+  display: inline-block; /* Ensure the button takes up the full width */
 }
 
 #clear-cart-button:hover {

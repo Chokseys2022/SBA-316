@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showError(message) {
-    const errorDisplay = document.getElementById("errorDisplay");
+    const errorDisplay = document.getElementById("formErrorDisplay");
     displayMessage(errorDisplay, message, "#fcc", "red");
   }
 
   function showSuccess(message) {
-    const errorDisplay = document.getElementById("errorDisplay");
-    displayMessage(errorDisplay, message, "#cfc", "green");
+    const successDisplay = document.getElementById("formSuccessDisplay");
+    displayMessage(successDisplay, message, "#cfc", "green");
   }
 
   function displayMessage(element, message, bgColor, textColor) {
@@ -69,9 +69,10 @@ function addToCart(productPrice) {
 }
 
 function clearCart() {
-  cartItemCount = 0;
   cartTotal = 0;
+  cartItemCount = 0;
   updateCartDisplay();
+  showSuccess("Cart cleared successfully!");
 }
 
 function updateCartDisplay() {
@@ -81,6 +82,7 @@ function updateCartDisplay() {
 
 // Button to clear the cart
 const clearCartButton = document.getElementById("clear-cart-button");
-clearCartButton.addEventListener("click", function () {
+clearCartButton.addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent the default button action
   clearCart();
 });
