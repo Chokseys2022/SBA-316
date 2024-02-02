@@ -58,9 +58,9 @@
             <span class="price">$799</span>
             <button onclick="addToCart(799)">Add to Cart</button>
           </div>
-          <!-- Product 3-->
+          <!-- Product 4-->
           <div class="product">
-            <img src="earring3.png" alt="Jewelry 3" />
+            <img src="earring4.jpg" alt="Jewelry 3" />
             <h3>Earring3</h3>
             <p>some Info</p>
             <span class="price">$799</span>
@@ -72,7 +72,7 @@
       <!-- Order Form -->
       <div>
         <h1>Order Form</h1>
-        <p></p>
+        <p>place holder for some paragraph</p>
 
         <!-- Contact Form -->
         <form id="contact-form">
@@ -82,29 +82,38 @@
           <label for="email">Email:</label>
           <input type="email" name="email" required />
 
+          <label for="payment">Payment Type:</label>
+          <select name="payment" id="payment" required>
+            <option value="" disabled selected>Select Payment Type</option>
+            <option value="credit_card">Credit Card</option>
+            <option value="debit_card">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <!-- Add more options as needed -->
+          </select>
+
           <label for="message">Message:</label>
-          <textarea name="message" rows="4" required></textarea>
+          <textarea name="message" rows="2"></textarea>
 
           <input type="submit" value="Submit" />
         </form>
 
         <!-- Display Cart Total and Number of Items -->
-        <div class="col-25">
-          <div class="container">
-            <h4>
-              Cart
-              <span class="price" style="color: black">
-                <i class="fa fa-shopping-cart"></i>
-                <b id="cart-item-count">0</b>
-              </span>
-            </h4>
-            <p>
-              Total
-              <span class="price" style="color: black"
-                ><b id="cart-total">$0</b></span
-              >
-            </p>
-          </div>
+        <div class="cart-container">
+          <h4>
+            Cart
+            <span class="price" style="color: black">
+              <i class="fa fa-shopping-cart"></i>
+              <b id="cart-item-count">0</b>
+            </span>
+          </h4>
+          <p>
+            Total
+            <span class="price" style="color: black">
+              <b id="cart-total">$0</b>
+            </span>
+          </p>
+        </div>
+        
         </div>
       </div>
     </div>

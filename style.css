@@ -112,14 +112,14 @@ button:hover {
   color: #0097a7;
 }
 
-/* Add your styles here */
+/* Cart */
 
-/* Add this style to hide individual products in the cart */
-.product-cart {
-  display: none;
-}
-
-/* Style for the cart total */
-.cart-total {
-  margin-top: 20px;
+.cart-container {
+  position: fixed;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  background-color: #fff; /* Background color for better visibility */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
