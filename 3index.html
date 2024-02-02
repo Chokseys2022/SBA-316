@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry Store</title>
+    <link rel="stylesheet" href="3style.css" />
+    <script
+      src="https://kit.fontawesome.com/d8f052c6cf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <h1>Jewelry Store</h1>
+        <nav>
+          <button onclick="navigateTo('home')">Home</button>
+          <button onclick="navigateTo('about')">About</button>
+          <button onclick="navigateTo('contact')">Contact</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Container for entire jewelry store -->
+    <div class="jewelry-container">
+      <!-- Featured Products -->
+      <div>
+        <h1>Our Jewelry Collection</h1>
+        <p>
+          Explore our exquisite jewelry pieces crafted with precision and
+          elegance.
+        </p>
+
+        <!-- Product Showcase -->
+        <div class="product-showcase">
+          <!-- Product 1 -->
+          <div class="product">
+            <img src="earring5.jpg" alt="Jewelry 1" />
+            <h3>Earring5</h3>
+            <p>Some info</p>
+            <span class="price">$999</span>
+            <button onclick="addToCart(999)">Add to Cart</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product">
+            <img src="earring1.jpg" alt="Jewelry 2" />
+            <h3>Earring1</h3>
+            <p>Some info</p>
+            <span class="price">$799</span>
+            <button onclick="addToCart(799)">Add to Cart</button>
+          </div>
+
+          <!-- Product 3-->
+          <div class="product">
+            <img src="earring3.png" alt="Jewelry 3" />
+            <h3>Sapphire Earring3</h3>
+            <p>some info</p>
+            <span class="price">$799</span>
+            <button onclick="addToCart(799)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact and Information -->
+      <div>
+        <h1>Contact Us</h1>
+        <p>Visit our store or contact us for personalized assistance.</p>
+
+        <!-- Contact Form -->
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea name="message" rows="4" required></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+
+        <!-- Display Cart Total and Number of Items -->
+        <div class="col-25">
+          <div class="container">
+            <h4>
+              Cart
+              <span class="price" style="color: black">
+                <i class="fa fa-shopping-cart"></i>
+                <b id="cart-item-count">0</b>
+              </span>
+            </h4>
+            <p>
+              Total
+              <span class="price" style="color: black"
+                ><b id="cart-total">$0</b></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error Display Container -->
+    <div id="errorDisplay"></div>
+
+    <script src="3script.js"></script>
+  </body>
+</html>
