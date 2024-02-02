@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* min-height: 100px; */
+  /* background-color: lightblue; */
+  margin: auto;
+}
+
+#logoNav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: lightcoral;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  /* background-color: lightgrey; */
+  align-items: center;
+  padding-left: 2%;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  /* background-color: blue; */
+  align-items: center;
+  padding-left: 2%;
+}
+
+.navbarButton {
+  margin-right: 10px;
+  padding: 8px 16px;
+  color: blue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbarButton:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+#blank {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  background-color: lightgrey;
+  align-items: center;
+  padding-left: 2%;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100px;
+  /* background-color: orange; */
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  background-color: lightseagreen;
+  margin: 0 5px;
+  align-items: center;
+}
+
+.col-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+  /* Set a maximum height for the image */
+  object-fit: contain;
+  /* Maintain aspect ratio and fit within the container */
+}
+
+.col-image-zoomed {
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center center;
+  transform: scale(1.5);
+}
+
+#boxes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 150px;
+  /* background-color: mediumpurple; */
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.bigBox {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-basis: 30%; */
+  flex: 1;
+  background-color: lightpink;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* Add padding for better spacing */
+  text-align: center;
+  /* Center the content */
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Layout4</title>
+  <link rel="stylesheet" href="style.css" />
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="logoNav">
+      <div id="logo">Logo</div>
+      <nav id="nav">
+        <button class="navbarButton">Button 1</button>
+        <button class="navbarButton">Button 2</button>
+        <button class="navbarButton">Button 3</button>
+      </nav>
+    </header>
+    <div id="blank"> blank bar </div>
+    <div id="main">
+      <div class="row">
+        <div class="col"> <img src="earring1.jpg" alt="gold earring" class="col-image"></div>
+
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      </main>
+      <div id="boxes">
+      <div class="bigBox">
+        <div>
+          <h2>Box1</h2>
+          <form id="addToCartForm">
+            <label for="itemOptions">Select Options:</label>
+            <select id="itemOptions" name="itemOptions">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <!-- Add more options as needed -->
+            </select>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <br>
+            <button type="submit">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- <div class="bigBox">Box2</div>
+    <div class="bigBox">Box3</div> -->
+    </div>
+    <div id="footer">Footer</div>
+
+  </div>
+  </div>
+</body>
+
+</html>
