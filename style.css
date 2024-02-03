@@ -4,14 +4,12 @@ html {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  font-family:"Calibri", Arial, sans-serif;
+  font-family: "Calibri", Arial, sans-serif;
+}
 
-
-  .header-container {
-    background-color: beige; /* Corrected syntax for background-color */
-  }
-
-
+.header-container {
+  background-color: maroon;
+}
 
 .jewelry-container {
   display: flex;
@@ -37,6 +35,7 @@ html {
   margin: 15px;
   padding: 10px;
   border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
@@ -47,16 +46,16 @@ html {
 }
 
 .price {
-  color: #0097a7;
+  color: maroon;
   font-weight: bold;
 }
 
 button {
-  background: #55ecfc;
-  color: #fff;
+  background: whitesmoke;
+  color: maroon;
   border: none;
   padding: 5px 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -84,7 +83,7 @@ button:hover {
   width: 100%;
   padding: 7px;
   margin: 5px 0;
-  outline: 1px solid #888;
+  outline: 0.2px solid grey;
   border-radius: 5px;
 }
 
@@ -92,35 +91,22 @@ button:hover {
   height: 100px;
 }
 
-#contact-form input[type="submit"] {
-  background: #55ecfc;
+/* #contact-form input[type="submit"] {
+  background:blue;
   color: #fff;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 #contact-form input[type="submit"]:hover {
   background: #ffab40;
 }
 
-.store-info {
-  margin-top: 20px;
-}
-
-.store-info p {
-  margin: 5px 0;
-}
-
-.store-info i {
-  margin-right: 5px;
-  color: #0097a7;
-}
 
 /* Cart */
 
-/* Add this CSS to style the cart and button */
 .cart-container {
   margin-top: 20px;
   text-align: left;
@@ -128,14 +114,13 @@ button:hover {
 
 #clear-cart-button,
 #submitForm button {
-  background: #55ecfc;
+  background:maroon;
   color: #fff;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
-  /* Adjust as needed */
+  margin-top: 10px; /* Adjust as needed */
   display: inline-block; /* Ensure the button takes up the full width */
 }
 
@@ -143,16 +128,4 @@ button:hover {
 #submitForm button:hover {
   background: #ffab40;
 }
-
-/* #submitForm button {
-  background: #55ecfc;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#submitForm button:hover {
-  background: #ffab40;
-} */
+/* End of the Cart section */
