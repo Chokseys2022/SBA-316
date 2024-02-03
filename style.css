@@ -4,8 +4,14 @@ html {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  font-family: "Calibri", sans-serif;
-}
+  font-family:"Calibri", Arial, sans-serif;
+
+
+  .header-container {
+    background-color: beige; /* Corrected syntax for background-color */
+  }
+
+
 
 .jewelry-container {
   display: flex;

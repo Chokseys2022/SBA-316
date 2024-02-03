@@ -1,3 +1,5 @@
+// script.js
+
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.getElementById("contact-form");
   contactForm.addEventListener("submit", handleFormSubmission);
@@ -5,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleFormSubmission(event) {
     event.preventDefault(); // Prevent the default form submission
 
-    const { name, email, message } = getFormValues();
+    const { name, address, email } = getFormValues();
 
-    if (validateForm(name, email, message)) {
-      // Simulate form submission (you can replace this with an actual submission logic)
+    if (validateForm(name, address, email)) {
+      // Simulate form submission (replace this with your actual form submission logic)
       showSuccess("Message sent successfully!");
       resetForm();
     }
@@ -16,18 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function getFormValues() {
     const nameInput = document.querySelector('input[name="name"]');
+    const addressInput = document.querySelector('input[name="address"]');
     const emailInput = document.querySelector('input[name="email"]');
-    const messageInput = document.querySelector('textarea[name="message"]');
 
     return {
       name: nameInput.value.trim(),
+      address: addressInput.value.trim(),
       email: emailInput.value.trim(),
-      message: messageInput.value.trim(),
     };
   }
 
-  function validateForm(name, email, message) {
-    if (name === "" || email === "" || message === "") {
+  function validateForm(name, address, email) {
+    if (name === "" || address === "" || email === "") {
       showError("Please fill in all fields");
       return false;
     }
@@ -40,24 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showSuccess(message) {
-    const successDisplay = document.getElementById("formSuccessDisplay");
-    displayMessage(successDisplay, message, "#cfc", "green");
+    const errorDisplay = document.getElementById("formErrorDisplay");
+    displayMessage(errorDisplay, message, "#cfc", "green");
   }
 
   function displayMessage(element, message, bgColor, textColor) {
     element.style.backgroundColor = bgColor;
     element.style.color = textColor;
     element.innerHTML = message;
-    element.style.display = "flex";
+    element.style.display = "block";
 
     // Hide the message after 3 seconds (adjust as needed)
     setTimeout(function () {
       element.style.display = "none";
     }, 3000);
   }
-
-  // Add your existing cart-related JavaScript functions here
 });
+
+// Your existing cart-related JavaScript functions go here
 
 var cartItemCount = 0;
 var cartTotal = 0;
