@@ -9,6 +9,7 @@ html {
 
 .header-container {
   background-color: maroon;
+  padding-left: 50px;
 }
 
 .jewelry-container {
@@ -42,7 +43,7 @@ html {
 .product img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .price {
@@ -66,6 +67,15 @@ button:hover {
 /* Contact and Information Section */
 .jewelry-container > div:last-child {
   width: 35%;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Style for input when in focus */
+input:focus {
+  border: 5px solid maroon; /* Change the border size and color on focus */
 }
 
 #contact-form {
@@ -104,7 +114,6 @@ button:hover {
   background: #ffab40;
 }
 
-
 /* Cart */
 
 .cart-container {
@@ -114,7 +123,7 @@ button:hover {
 
 #clear-cart-button,
 #submitForm button {
-  background:maroon;
+  background: maroon;
   color: #fff;
   border: none;
   padding: 10px;

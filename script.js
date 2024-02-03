@@ -43,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function showSuccess(message) {
     window.alert(message);
   }
+
+  function resetForm() {
+    contactForm.reset(); // Reset the form
+  }
 });
-
-// Your existing cart-related JavaScript functions go here
-
-// Your existing cart-related JavaScript functions go here
 
 // Your existing cart-related JavaScript functions go here
 
