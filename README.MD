@@ -1,6 +1,6 @@
 # Jewelry Store Website
 
-Welcome to the Jewelry Store website, where luxury meets affordability. This web application showcases a collection of exquisite gold earrings and includes an order form for users to make purchases.
+Welcome to Gehna Jewelry website, where luxury meets affordability. This web application showcases a collection of exquisite gold earrings. 
 
 
 ## Features
@@ -8,7 +8,8 @@ Welcome to the Jewelry Store website, where luxury meets affordability. This web
 - Product showcase with images, descriptions, prices, and "Add to Cart" buttons.
 - Order form with name, address, email, payment type, and submission functionality.
 - Cart display showing the total number of items and the cart total amount.
-- Navigation buttons for easy access to Home, About, and Contact sections.
+- It includes an order form for users to make purchases.
+
 
 ## Requirements Met
 
