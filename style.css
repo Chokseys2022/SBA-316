@@ -7,6 +7,7 @@ html {
   font-family: "Calibri", Arial, sans-serif;
 }
 
+h1{color: goldenrod;}
 .header-container {
   background-color: maroon;
   padding-left: 50px;
@@ -58,6 +59,7 @@ button {
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 button:hover {
@@ -75,7 +77,7 @@ label {
 
 /* Style for input when in focus */
 input:focus {
-  border: 5px solid maroon; /* Change the border size and color on focus */
+  border: 3px solid maroon; /* Change the border size and color on focus */
 }
 
 #contact-form {
