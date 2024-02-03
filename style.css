@@ -117,10 +117,11 @@ button:hover {
 /* Add this CSS to style the cart and button */
 .cart-container {
   margin-top: 20px;
-  text-align: center;
+  text-align: left;
 }
 
-#clear-cart-button {
+#clear-cart-button,
+#submitForm button {
   background: #55ecfc;
   color: #fff;
   border: none;
@@ -132,6 +133,20 @@ button:hover {
   display: inline-block; /* Ensure the button takes up the full width */
 }
 
-#clear-cart-button:hover {
+#clear-cart-button:hover,
+#submitForm button:hover {
   background: #ffab40;
 }
+
+/* #submitForm button {
+  background: #55ecfc;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitForm button:hover {
+  background: #ffab40;
+} */
