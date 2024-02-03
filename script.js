@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (validateForm(name, address, email)) {
       // Simulate form submission (replace this with your actual form submission logic)
-      showSuccess("Message sent successfully!");
+      showSuccess("We have recieved your order, thank you!");
       resetForm();
     }
   }
@@ -37,27 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showError(message) {
-    const errorDisplay = document.getElementById("formErrorDisplay");
-    displayMessage(errorDisplay, message, "#fcc", "red");
+    window.alert(message);
   }
 
   function showSuccess(message) {
-    const errorDisplay = document.getElementById("formErrorDisplay");
-    displayMessage(errorDisplay, message, "#cfc", "green");
-  }
-
-  function displayMessage(element, message, bgColor, textColor) {
-    element.style.backgroundColor = bgColor;
-    element.style.color = textColor;
-    element.innerHTML = message;
-    element.style.display = "block";
-
-    // Hide the message after 3 seconds (adjust as needed)
-    setTimeout(function () {
-      element.style.display = "none";
-    }, 3000);
+    window.alert(message);
   }
 });
+
+// Your existing cart-related JavaScript functions go here
+
+// Your existing cart-related JavaScript functions go here
 
 // Your existing cart-related JavaScript functions go here
 
