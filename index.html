@@ -3,21 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gehna Jewelry Store</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/d8f052c6cf.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
+    <!-- Document Title -->
+    <title>Gehna Jewelry Store</title>
+
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Script Files -->
+    <script defer src="script.js"></script>
+    <scriptsrc="https://kit.fontawesome.com/d8f052c6cf.js"crossorigin="anonymous"></script>
+
+
+  </head>
   <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
+      <!-- Header Container with Logo and Navigation -->
       <div class="header-container">
         <h1>Gehna</h1>
         <nav>
+          <!-- Navigation Buttons -->
           <button onclick="navigateTo('home')">Home</button>
           <button onclick="navigateTo('about')">About</button>
           <button onclick="navigateTo('contact')">Contact</button>
@@ -25,18 +31,19 @@
       </div>
     </header>
 
-    <!-- Container for entire jewelry store -->
+    <!-- Main Container for the Entire Jewelry Store -->
     <div class="jewelry-container">
       <div>
+        <!-- Store Introduction Section -->
         <h1>Gehna-where luxury meets affordability</h1>
         <p>Elevate your style with our exquisite collection of gold earrings</p>
 
-        <!-- Product Showcase -->
+        <!-- Product Showcase Section -->
         <div class="product-showcase">
+          <!-- Individual Product Display -->
           <!-- Product 1 -->
           <div class="product">
             <img src="earring5.jpg" alt="Jewelry 1" />
-
             <p>Gold and Gemstones</p>
             <span class="price">$999</span>
             <button onclick="addToCart(999)">Add to Cart</button>
@@ -45,24 +52,22 @@
           <!-- Product 2 -->
           <div class="product">
             <img src="earring2.jpg" alt="Jewelry 2" />
-
             <p>Gold and Diamonds</p>
             <span class="price">$799</span>
             <button onclick="addToCart(799)">Add to Cart</button>
           </div>
 
-          <!-- Product 3-->
+          <!-- Product 3 -->
           <div class="product">
             <img src="earring3.png" alt="Jewelry 3" />
-
             <p>Gold and Diamonds</p>
             <span class="price">$799</span>
             <button onclick="addToCart(799)">Add to Cart</button>
           </div>
-          <!-- Product 4-->
+
+          <!-- Product 4 -->
           <div class="product">
             <img src="earring7.jpg" alt="Jewelry 4" />
-
             <p>Gold and Gemstones</p>
             <span class="price">$799</span>
             <button onclick="addToCart(799)">Add to Cart</button>
@@ -70,12 +75,13 @@
         </div>
       </div>
 
-      <!-- Order Form -->
+      <!-- Order Form Section -->
       <div>
         <h1>Order Form</h1>
 
         <!-- Contact Form -->
         <form id="contact-form">
+          <!-- Input Fields with Labels -->
           <label for="name">Name:</label>
           <input type="text" name="name" required />
 
@@ -85,7 +91,7 @@
           <label for="email">Email:</label>
           <input type="email" name="email" required />
 
-          <!-- Display Cart Total and Number of Items -->
+          <!-- Cart Display Section -->
           <div class="cart-container">
             <h4>
               Cart
@@ -99,11 +105,12 @@
               <span class="price" style="color: black">
                 <b id="cart-total">$0</b>
               </span>
-              <!-- Move the "Clear Cart" button here -->
+              <!-- Clear Cart Button -->
               <button id="clear-cart-button">Clear Cart</button>
             </p>
           </div>
 
+          <!-- Payment Type Selection -->
           <label for="payment">Payment Type:</label>
           <select name="payment" id="payment" required>
             <option value="" disabled selected>Select Payment Type</option>
@@ -111,6 +118,8 @@
             <option value="debit_card">Debit Card</option>
             <option value="paypal">PayPal</option>
           </select>
+
+          <!-- Form Submission Button -->
           <button id="submitForm" type="submit">Submit</button>
         </form>
       </div>
@@ -123,3 +132,5 @@
     <div id="cartErrorDisplay"></div>
   </body>
 </html>
+
+<!--*********************************************** END CODE******************************************************--->

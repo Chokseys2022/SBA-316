@@ -1,18 +1,25 @@
+/* Setting default styles for body and html */
 body,
 html {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Calibri", Arial, sans-serif;
 }
 
-h1{color: goldenrod;}
+/* Heading Style */
+h1 {
+  color: goldenrod;
+}
+
+/* Header Container Style */
 .header-container {
   background-color: maroon;
   padding-left: 50px;
 }
 
+/* Main Jewelry Container Styles */
 .jewelry-container {
   display: flex;
   justify-content: space-around;
@@ -21,7 +28,7 @@ h1{color: goldenrod;}
   padding: 20px;
 }
 
-/* Featured Products Section */
+/* Featured Products Section Styles */
 .jewelry-container > div:first-child {
   width: 60%;
 }
@@ -31,6 +38,7 @@ h1{color: goldenrod;}
   justify-content: space-around;
 }
 
+/* Individual Product Style */
 .product {
   width: 200px;
   text-align: center;
@@ -49,9 +57,9 @@ h1{color: goldenrod;}
 
 .price {
   color: maroon;
-  /* font-weight: bold; */
 }
 
+/* Button Styles */
 button {
   background: whitesmoke;
   color: maroon;
@@ -66,18 +74,19 @@ button:hover {
   background: #ffab40;
 }
 
-/* Contact and Information Section */
+/* Contact and Information Section Styles */
 .jewelry-container > div:last-child {
   width: 35%;
 }
 
+/* Label Style */
 label {
   font-weight: bold;
 }
 
-/* Style for input when in focus */
+/* Input Styles */
 input:focus {
-  border: 3px solid maroon; /* Change the border size and color on focus */
+  border: 3px solid maroon;
 }
 
 #contact-form {
@@ -103,26 +112,18 @@ input:focus {
   height: 100px;
 }
 
-/* #contact-form input[type="submit"] {
-  background:blue;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-} */
-
+/* Submit Button Styles */
 #contact-form input[type="submit"]:hover {
   background: #ffab40;
 }
 
-/* Cart */
-
+/* Cart Container Styles */
 .cart-container {
   margin-top: 20px;
   text-align: left;
 }
 
+/* Button Styles for Cart and Submit Form */
 #clear-cart-button,
 #submitForm button {
   background: maroon;
@@ -131,12 +132,14 @@ input:focus {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px; /* Adjust as needed */
-  display: inline-block; /* Ensure the button takes up the full width */
+  margin-top: 10px;
+  display: inline-block;
 }
 
+/* Hover Styles for Cart and Submit Form Buttons */
 #clear-cart-button:hover,
 #submitForm button:hover {
   background: #ffab40;
 }
-/* End of the Cart section */
+
+/* *******************************************END CODE******************************************************** */
