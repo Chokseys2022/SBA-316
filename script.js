@@ -1,25 +1,25 @@
 // script.js
 
+// run code after html doc loads
 document.addEventListener("DOMContentLoaded", function () {
-  // Event listener for form submission
+  // get form element with id "contact form"
   const contactForm = document.getElementById("contact-form");
   contactForm.addEventListener("submit", handleFormSubmission);
 
-  // Function to handle form submission
+  // prevents default form submission allows form validation and submission logic
   function handleFormSubmission(event) {
     event.preventDefault(); // Prevent the default form submission
 
     // Get form values
     const { name, address, email } = getFormValues();
 
-    // Validate form and submit
+    // if form is valid, submit it
     if (validateForm(name, address, email)) {
       // Simulate form submission (replace this with your actual form submission logic)
       showSuccess("We have received your order, thank you!");
       resetForm();
     }
   }
-
   // Function to get form values
   function getFormValues() {
     const nameInput = document.querySelector('input[name="name"]');
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.alert(message);
   }
 
-  // Function to show success message
+  // Function to show success message alert popup window
   function showSuccess(message) {
     window.alert(message);
   }
@@ -59,14 +59,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Cart-related functions
-
+// keep track of itmes in cart and total
 var cartItemCount = 0;
 var cartTotal = 0;
 
 // Function to add an item to the cart
-function addToCart(productPrice) {
+function addToCart(earringPrice) {
   cartItemCount++;
-  cartTotal += productPrice;
+  cartTotal += earringPrice;
   updateCartDisplay();
 }
 
@@ -84,10 +84,10 @@ function updateCartDisplay() {
   document.getElementById("cart-total").innerText = "$" + cartTotal;
 }
 
-// Event listener for the "Clear Cart" button
+// Event listener to clear the cart
 const clearCartButton = document.getElementById("clear-cart-button");
 clearCartButton.addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent the default button action
+  event.preventDefault(); 
   clearCart();
 });
 
