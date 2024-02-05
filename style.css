@@ -126,8 +126,8 @@ input:focus {
 /* Button Styles for Cart and Submit Form */
 #clear-cart-button,
 #submitForm button {
-  background: maroon;
-  color: #fff;
+  background: whitesmoke;
+  color: maroon;
   border: none;
   padding: 10px;
   border-radius: 5px;
