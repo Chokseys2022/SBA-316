@@ -1,4 +1,28 @@
-// script.js
+// alerts for home aboy and contact buttons
+function navigateTo(section) {
+  const sections = ["home", "about", "contact"];
+
+  if (sections.includes(section)) {
+    // Perform navigation logic based on the section
+    switch (section) {
+      case "home":
+        window.alert("You are on the home page!");
+        break;
+      case "about":
+        window.alert(
+          "Thank you for visiting - this page is under construction!"
+        );
+        break;
+      case "contact":
+        window.alert(
+          "Email us at: gehna.email.com or call 1(000)000-0000 to reach us"
+        );
+        break;
+    }
+  } else {
+    window.alert("Invalid section specified!");
+  }
+}
 
 // run code after html doc loads
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,7 +111,7 @@ function updateCartDisplay() {
 // Event listener to clear the cart
 const clearCartButton = document.getElementById("clear-cart-button");
 clearCartButton.addEventListener("click", function (event) {
-  event.preventDefault(); 
+  event.preventDefault();
   clearCart();
 });
 
